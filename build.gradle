@@ -1,14 +1,19 @@
 group 'com.study.effectivejava'
 version '1.0-SNAPSHOT'
 
-apply plugin: 'java'
 
-sourceCompatibility = 1.8
+allprojects {
 
-repositories {
-    mavenCentral()
-}
+    apply plugin: 'java'
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    sourceCompatibility = 1.8
+
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+        testCompile group: 'org.assertj', name: 'assertj-core', version: '3.10.0'
+    }
+
+    repositories {
+        mavenCentral()
+    }
 }
