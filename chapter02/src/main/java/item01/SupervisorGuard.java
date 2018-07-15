@@ -3,7 +3,9 @@ package item01;
 /**
  * Supervisor guard is more expensive compared to the others so there will be only one way of getting it.
  */
-public class SupervisorGuard extends Guard {
+class SupervisorGuard extends Guard {
+
+    protected SupervisorGuard(){}
 
     @Override
     public String getGuardInfo() {

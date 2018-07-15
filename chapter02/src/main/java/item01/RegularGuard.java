@@ -1,6 +1,9 @@
 package item01;
 
-public class RegularGuard extends Guard {
+class RegularGuard extends Guard {
+
+     protected RegularGuard(){}
+
     @Override
     public String getGuardInfo() {
         return "I'm the regular guard what do you need?";

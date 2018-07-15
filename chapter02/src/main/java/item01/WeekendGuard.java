@@ -3,7 +3,9 @@ package item01;
 /**
  * Weekend guards will be returned only on the weekends.
  */
-public class WeekendGuard extends Guard {
+class WeekendGuard extends Guard {
+
+    protected WeekendGuard(){}
 
     @Override
     public String getGuardInfo() {
